@@ -13,7 +13,6 @@
       background: #fef9f4;
       color: #432818;
     }
-
     header {
       background: linear-gradient(90deg, #d1603d, #ffa987);
       color: white;
@@ -21,37 +20,31 @@
       text-align: center;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     h1 {
       font-size: 2.5rem;
       margin: 0;
     }
-
     .container {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
       animation: fadeIn 1s ease-in;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     form {
       background: #fff;
       padding: 2rem;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0,0,0,0.05);
     }
-
     label {
       display: block;
       font-weight: 600;
       margin-top: 1.5rem;
     }
-
     select, textarea, input[type="text"] {
       width: 100%;
       padding: 0.8rem;
@@ -59,7 +52,6 @@
       border-radius: 8px;
       border: 1px solid #ccc;
     }
-
     .star-rating {
       display: flex;
       flex-direction: row-reverse;
@@ -67,23 +59,19 @@
       gap: 0.2rem;
       margin-top: 0.5rem;
     }
-
     .star-rating input {
       display: none;
     }
-
     .star-rating label {
       font-size: 1.8rem;
       color: #ddd;
       cursor: pointer;
     }
-
     .star-rating input:checked ~ label,
     .star-rating label:hover,
     .star-rating label:hover ~ label {
       color: #ffc107;
     }
-
     .submit-btn {
       margin-top: 2rem;
       background: linear-gradient(90deg, #e36414, #9a3412);
@@ -96,7 +84,6 @@
       cursor: pointer;
       transition: background 0.3s ease;
     }
-
     .submit-btn:hover {
       background: #7f2f10;
     }
@@ -109,22 +96,22 @@
 
   <div class="container">
     <form action="https://formspree.io/f/xdkdkryv" method="POST">
-      <label for="dish">Select the Dessert You Tried</label>
+      <label for="dessert">Select the Dessert You Tried</label>
       <select name="dessert" id="dessert" required>
         <option value="" disabled selected>Select a dessert</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Torta Caprese">Torta Caprese</option>
-        <option value="Panna Cotta">Panna Cotta</option>
-        <option value="Cannoli">Cannoli</option>
-        <option value="Affogato">Affogato</option>
-        <option value="Biscotti">Biscotti</option>
-        <option value="Semifreddo">Semifreddo</option>
-        <option value="Gelato">Gelato</option>
-        <option value="Ricotta Cheesecake">Ricotta Cheesecake</option>
-        <option value="Torta della Nonna">Torta della Nonna</option>
-        <option value="Chocolate & Hazelnut Brownie">Chocolate & Hazelnut Brownie</option>
-        <option value="Sorbet (lemon, mango, raspberry)">Sorbet (lemon, mango, raspberry)</option>
-        <option value="Affogato with Liqueur">Affogato with Liqueur</option>
+        <option value="Fatto Tiramisu">Fatto Tiramisu – 7</option>
+        <option value="Scugnizzielli Nutella & Gelato">Scugnizzielli Nutella & Gelato – 7.5</option>
+        <option value="Affogato">Affogato – 6</option>
+        <option value="Affogato Limoncello">Affogato Limoncello (ag) – 7.5</option>
+        <option value="Gelato Sandwich - Lemon Meringue">Gelato Sandwich - Lemon Meringue – 7</option>
+        <option value="Gelato Sandwich - Chocolate Salted Caramel">Gelato Sandwich - Chocolate Salted Caramel – 7</option>
+        <option value="Gelato Sandwich - Chocolate Orange">Gelato Sandwich - Chocolate Orange (ag) – 7</option>
+        <option value="Digestivo - Limoncello">Digestivo (35ml) – Limoncello – 4</option>
+        <option value="Digestivo - Crema di Pistachio">Digestivo - Crema di Pistachio</option>
+        <option value="Digestivo - Amaro del Capo">Digestivo - Amaro del Capo</option>
+        <option value="Digestivo - Meloncello">Digestivo - Meloncello</option>
+        <option value="Coffee - Espresso">Coffee - Espresso – 2.5</option>
+        <option value="Coffee - Macchiato">Coffee - Macchiato – 2.5</option>
       </select>
 
       <label>Rate the Dessert:</label>
